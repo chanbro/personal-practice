@@ -1,0 +1,81 @@
+:root {
+    --jumbotron-text-color: #fcf1e6;
+    --drop-shadow-color: #45423f;
+    --link-color: #4d0000;
+    --link-visited-color: #df9d6c;
+    --bar-text-color: #fcf1e6;
+    --bar-color: #4d0000;
+    --bar-text-hover: #df9d6c;
+    --body-header-color: #634739;
+    --container-color: #fcf1e6;
+}
+
+body, html {
+    height: 100%;
+}
+
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    background: url("../img/jumbotron.jpeg") no-repeat fixed;
+    margin-top: 0;
+    padding: 0;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100%, 100%;
+}
+
+.container {
+    margin: auto;
+    align-content: center;
+    background-color: var(--container-color);
+    height: 100%;
+    width: calc(100% - 25em);
+    top: 0;
+    bottom: 0;
+    opacity: .65;
+}
+
+.display {
+    font-family: 'Sacramento', cursive;
+    font-size: 60px;
+    text-align: center;
+    color: var(--jumbotron-text-color);
+    text-shadow: 4px 6px 4px var(--drop-shadow-color);
+    margin-bottom: 0;
+}
+
+.lead{
+    font-family: 'Josefin Slab', serif;
+    font-size: 30px;
+    text-align: center;
+    color: var(--jumbotron-text-color);
+    text-shadow: 2px 4px 2px var(--drop-shadow-color);
+    padding: 0;
+    margin-top: 0;
+
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: left;
+    color: var(--body-color)
+}
+
+.nav:hover {
+    font-family: 'Josefin Slab', serif, italic;
+    color: var(--bar-hover-color);
+}
+
+.bg-image {
+    background-image: url(https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); /*wood*/
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
