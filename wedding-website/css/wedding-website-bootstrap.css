@@ -18,8 +18,6 @@ body, html {
     display: flex;
     flex-direction: column;
     background: url("../img/jumbotron.jpeg") no-repeat ;
-    margin-top: 0;
-    padding: 0;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
@@ -27,6 +25,10 @@ body, html {
     height: 125vh;
 }
 
+#custom-navbar {
+    background-color: white;
+    font-family: 'Martel', serif;
+}
 /*.container-bg {*/
 /*    margin: auto;*/
 /*    align-content: center;*/
@@ -69,6 +71,12 @@ body {
     color: var(--bar-hover-color);
 }
 
+.bg-spacer {
+    background-color: #4d0000;
+    width: 1000;
+    height: 100;
+    margin-bottom: 100px;
+}
 /*.bg-image {*/
 /*    background-image: url(https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); !*wood*!*/
 /*    !* Full height *!*/
