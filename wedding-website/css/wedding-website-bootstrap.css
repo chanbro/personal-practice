@@ -71,8 +71,9 @@ body {
     color: var(--bar-hover-color);
 }
 
+
 .bg-spacer {
-    background-color: #4d0000;
+    background-color: blue;
     width: 1000;
     height: 100;
     margin-bottom: 100px;
