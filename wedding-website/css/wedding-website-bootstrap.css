@@ -1,16 +1,15 @@
 :root {
-    --jumbotron-text-color: #fcf1e6;
+    --header-text-color: #fcf1e6;
     --drop-shadow-color: #45423f;
     --link-color: #4d0000;
-    --link-visited-color: #df9d6c;
     --bar-text-color: #fcf1e6;
     --bar-color: #4d0000;
-    --bar-text-hover: #df9d6c;
     --body-header-color: #634739;
-    --container-color: #fcf1e6;
+    --bg-color: #AF9E96;
 }
 
 body, html {
+    background-color: var(--bg-color);
     height: 100%;
 }
 
@@ -26,7 +25,7 @@ body, html {
 }
 
 #custom-navbar {
-    background-color: white;
+    background-color: var(--bg-color);
     font-family: 'Martel', serif;
 }
 /*.container-bg {*/
@@ -41,42 +40,31 @@ body, html {
 /*}*/
 
 .display {
-    font-family: 'Martel', serif;
+    font-family: 'Herr Von Muellerhoff', cursive;
     font-size: 60px;
     text-align: center;
-    color: var(--jumbotron-text-color);
+    color: var(--header-text-color);
     text-shadow: 4px 6px 4px var(--drop-shadow-color);
     margin-bottom: 0;
 }
 
 .lead {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Nixie One', cursive;
     font-size: 30px;
     text-align: center;
-    color: var(--jumbotron-text-color);
+    color: var(--header-text-color);
     text-shadow: 2px 4px 2px var(--drop-shadow-color);
     padding: 0;
     margin-top: 0;
 
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    text-align: left;
-    color: var(--body-color)
-}
 
 .nav:hover {
     font-family: 'Open Sans', serif, italic;
     color: var(--bar-hover-color);
 }
 
-
-.bg-spacer {
-    width: 1000;
-    height: 100;
-    margin-bottom: 1em;
-}
 /*.bg-image {*/
 /*    background-image: url(https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); !*wood*!*/
 /*    !* Full height *!*/
