@@ -3,9 +3,9 @@
     --drop-shadow-color: #45423f;
     --link-color: #4d0000;
     --bar-text-color: #fcf1e6;
-    --bar-color: #4d0000;
     --body-header-color: #634739;
     --bg-color: #AF9E96;
+    --header-font:
 }
 
 body, html {
@@ -39,30 +39,30 @@ body, html {
 /*    opacity: .65;*/
 /*}*/
 
-.display {
+h1 {
     font-family: 'Herr Von Muellerhoff', cursive;
-    font-size: 60px;
+    font-size: 5rem;
     text-align: center;
     color: var(--header-text-color);
     text-shadow: 4px 6px 4px var(--drop-shadow-color);
     margin-bottom: 0;
 }
 
-.lead {
+h2 {
     font-family: 'Nixie One', cursive;
-    font-size: 30px;
+    font-size: 2rem;
     text-align: center;
     color: var(--header-text-color);
     text-shadow: 2px 4px 2px var(--drop-shadow-color);
-    padding: 0;
-    margin-top: 0;
+}
+
+h4 {
+    font-family: 'Nixie One', cursive;
 
 }
 
-
 .nav:hover {
-    font-family: 'Open Sans', serif, italic;
-    color: var(--bar-hover-color);
+    color: var(--link-color);
 }
 
 /*.bg-image {*/
