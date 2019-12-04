@@ -7,6 +7,7 @@
 function isString(x) {
     return (typeof x) == "string"
 }
+
 console.log(typeof x); //test input type
 console.log(isString(x));
 
@@ -22,6 +23,7 @@ console.log(isString(x));
 function isNotString(x) {
     return (typeof x) !== "string"
 }
+
 // console.log(typeof x); // //test input type
 console.log(isNotString(x));
 
@@ -30,13 +32,13 @@ console.log(isNotString(x));
 // console.log(isNotString("yes")); //false
 
 
-
 // Define a function named isNotEmptyString that takes in a value and returns a boolean if the argument provided is an empty string or not.
 
 
 function isNotEmptyString(x) {
     return (typeof x == "string") && x.length > 0
 }
+
 // console.log(typeof x); // //test input type
 console.log(isNotEmptyString(x));
 
@@ -71,6 +73,7 @@ function isNumeric(x) {
     return !isNaN(parseFloat(x))
     //if is NOT not a number aka is a number, with the string removed to test string content for a number
 }
+
 isNumeric("yes");
 isNumeric("5");
 
@@ -100,9 +103,9 @@ function isTen(x) {
 
 // Define a function named isMoreThanTen that accepts a number and returns true or false based on whether the input is more than ten.
 
-
-
-
+function isMoreThanTen(x) {
+    return x > 10
+}
 // console.log(isMoreThanTen(2)); //false
 // console.log(isMoreThanTen(12)); //true
 // console.log(isMoreThanTen("yes")); //false
@@ -111,10 +114,7 @@ function isTen(x) {
 // console.log(isMoreThanTen("5")); //false
 
 
-
 // Define a function named isPositive that accepts an input and returns true or false based on whether the input is above zero. Any non-numeric input should return false.
-
-
 
 
 // console.log(isNegative(-2)); //true
