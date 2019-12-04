@@ -2,9 +2,13 @@
 
 
 // Define a function named isString that takes in a value and returns a boolean if the argument provided is a string or not.
+// if type of x returns string then true
 
-
-
+function isString(x) {
+    return (typeof x) == "string"
+}
+console.log(typeof x); //test input type
+console.log(isString(x));
 
 
 // console.log(isString(2)); //false
@@ -15,7 +19,11 @@
 // Define a function named isNotString that accepts an input and returns true or false based on whether an input is not a string. Numeric strings will count as strings and should return false.
 
 
-
+function isNotString(x) {
+    return (typeof x) !== "string"
+}
+// console.log(typeof x); // //test input type
+console.log(isNotString(x));
 
 // console.log(isNotString(2)); //true
 // console.log(isNotString(true)); //true
@@ -26,7 +34,11 @@
 // Define a function named isNotEmptyString that takes in a value and returns a boolean if the argument provided is an empty string or not.
 
 
-
+function isNotEmptyString(x) {
+    return (typeof x == "string") && x.length > 0
+}
+// console.log(typeof x); // //test input type
+console.log(isNotEmptyString(x));
 
 
 // console.log(isNotEmptyString(2)); //false
@@ -39,7 +51,11 @@
 
 // Define a function named isANumber that takes in a value and returns true if the input is a number.
 
+function isANumber(x) {
+    return (typeof x) === "number"
+}
 
+console.log(isANumber(x));
 
 // console.log(isANumber(2)); //true
 // console.log(isANumber("yes")); //false
@@ -51,8 +67,12 @@
 // Define a function named isNumeric that takes in a value and returns true if the input is numeric or not. Numeric strings are numeric and should return true.
 
 
-
-
+function isNumeric(x) {
+    return !isNaN(parseFloat(x))
+    //if is NOT not a number aka is a number, with the string removed to test string content for a number
+}
+isNumeric("yes");
+isNumeric("5");
 
 // console.log(isNumeric(2)); //true
 // console.log(isNumeric("yes")); //false
@@ -61,9 +81,11 @@
 // console.log(isNumeric("5")); //true
 
 
-// Define a function named isZero that will return true when passed an argument of the numeric value 0, and return false for all other arguments.
+// Define a function named isTen that will return true when passed an argument of the numeric value 0, and return false for all other arguments.
 
-
+function isTen(x) {
+    return parseInt(x) === 10
+}
 
 
 // console.log(isTen(2)); //false
