@@ -9,8 +9,8 @@ function isString(x) {
     return (typeof x) == "string"
 }
 
-console.log(typeof x); //test input type
-console.log(isString(x));
+// console.log(typeof x); //test input type
+// console.log(isString(x));
 
 
 // console.log(isString(2)); //false
@@ -26,7 +26,7 @@ function isNotString(x) {
 }
 
 // console.log(typeof x); // //test input type
-console.log(isNotString(x));
+// console.log(isNotString(x));
 
 // console.log(isNotString(2)); //true
 // console.log(isNotString(true)); //true
@@ -41,7 +41,7 @@ function isNotEmptyString(x) {
 }
 
 // console.log(typeof x); // //test input type
-console.log(isNotEmptyString(x));
+// console.log(isNotEmptyString(x));
 
 
 // console.log(isNotEmptyString(2)); //false
@@ -58,7 +58,7 @@ function isANumber(x) {
     return (typeof x) === "number"
 }
 
-console.log(isANumber(x));
+// console.log(isANumber(x));
 
 // console.log(isANumber(2)); //true
 // console.log(isANumber("yes")); //false
@@ -134,7 +134,15 @@ function isPositive(x) {
 
 //define a function names addFive that takes an input and adds 5, if the input is NOT numeric the function should return false.
 
-
+function addFive(x) {
+    x = parseInt(x);
+    x += 5;
+    if (isNaN(x)) {
+        return false;
+    } else {
+        return x;
+    }
+}
 
 // console.log(addFive("2")); // 7
 // console.log(addFive(5)); // 10
@@ -144,6 +152,15 @@ function isPositive(x) {
 
 //define a function names toTheThird that takes an input and returns that input to the third power (cubed); if the input is not numeric the function should return false
 
+function toTheThird(x) {
+    x = parseInt(x);
+    if (isNaN(x)) {
+        return false;
+    } else {
+        return x * x * x;
+    }
+}
+
 
 // console.log(toTheThird("2")); // 8
 // console.log(toTheThird(5)); // 125
@@ -152,6 +169,17 @@ function isPositive(x) {
 
 
 // Define a function named lowerCase that takes in a single input. If the input is not a string, return false. If the input is a non-numeric string, then return it with all the letters capitalized.
+// For palendromes, do it before testing for palindrome
+
+function lowerCase(x) {
+    if (!isNaN(parseInt(x))) {
+        return false;
+    } else if (typeof (x) === "string") {
+        return x.toLowerCase();
+    } else {
+        return false
+    }
+}
 
 
 // console.log(lowerCase("2")); // false
@@ -162,16 +190,35 @@ function isPositive(x) {
 
 // Write a function named sumOfCubes that takes in two inputs. If both inputs are numeric, sumOfSquares should square each input and return the sum of them added together. For example, if we pass a and b then we should square a and add it to the square of b. If either or both inputs are not numeric, sumOfSquares should return false.
 
+function sumOfCubes(x, y) {
+    x = parseInt(x);
+    y = parseInt(y);
+    if (isNaN(x) || isNaN(y)) {
+        return false
+    } else {
+        return ((x * x * x) + (y * y * y));
+    }
+}
 
-// console.log(sumOFCubes("2", "5")); //8 + 125 = 133
-// console.log(sumOFCubes(5, 4)); //125 + 64 = 189
-// console.log(sumOFCubes(true, true)); //false
-// console.log(sumOFCubes("cat", "dog")); //false
+// console.log(sumOfCubes("2", "5")); //8 + 125 = 133
+// console.log(sumOfCubes(5, 4)); //125 + 64 = 189
+// console.log(sumOfCubes(true, true)); //false
+// console.log(sumOfCubes("cat", "dog")); //false
 
 
 // Write a function named divide that takes in two inputs. If both inputs provided are numeric, divide returns the result of the first input multiplied by the second. If either or both inputs are not numeric, divide should return false.
 
-
+function divide(x, y) {
+    x = parseFloat(x);
+    y = parseFloat(y);
+    if (isNaN(x) || isNaN(y)) {
+        return false;
+    } else if (y === 0) {
+        return false;
+    } else {
+        return (x / y);
+    }
+}
 
 // console.log(divide("12", "4")); // 12 / 4 = 3
 // console.log(divide(20, 6)); // 20 / 6 = 3.33333~
@@ -187,33 +234,52 @@ function isPositive(x) {
 
 
 // Write a function named reverseUpperCaseString that takes in a single input. If the input is a numeric string, then return false. If the input is a string, return that string capitalized and reversed
+// For palendrome
 
 
+function reverseUpperCaseString(x) {
+    if (!isNaN(parseFloat(x))) {
+        return false;
+    } else if (typeof (x) !== "string") {
+        return false;
+    } else {
+        x = (x.split("").reverse().join("")).toUpperCase();
+        return x;
+    }
+}
+//split string at every character (turn all characters into array), reverse the order in which chacracters appear, rejoin characters as a string, turn all string characters to Uppercase
+//error at line 246
 
-
-// console.log(reverseUpperCaseString(true)); // false
-// console.log(reverseUpperCaseString(18)); // false
-// console.log(reverseUpperCaseString("15")); // false
-// console.log(reverseUpperCaseString("cat")); // TAC
-// console.log(reverseUpperCaseString("RaCeCaR")); // RACECAR
-// console.log(reverseUpperCaseString("yRaNoiTCId")); // DICTIONARY
+console.log(reverseUpperCaseString(true)); // false
+console.log(reverseUpperCaseString(18)); // false
+console.log(reverseUpperCaseString("15")); // false
+console.log(reverseUpperCaseString("cat")); // TAC
+console.log(reverseUpperCaseString("RaCeCaR")); // RACECAR
+console.log(reverseUpperCaseString("yRaNoiTCId")); // DICTIONARY
 
 
 
 // Write a function named getLowestNumber that takes in 3 arguments. If all 3 inputs are numbers or numeric strings, then return the highest number. If any of the 3 inputs is missing or non-numeric, then return false.
 
 
+function getLowestNumber(x, y, z) {
+    x = parseInt(x);
+    y = parseInt(y);
+    z = parseInt(z);
+    if (!isNaN(x) && !isNaN(y) && !isNaN(z) && typeof (x) == "number" && typeof (y) == "number" && typeof (z) == "number") {
+        return Math.min(x, y, z)
+    } else {
+        return false
+    }
+}
 
 
-
-
-
-console.log(getLowestNumber(1, 15, 30)); // 1
-console.log(getLowestNumber(true, false, true)); // false
-console.log(getLowestNumber("1", "15", "30")); // 1
-console.log(getLowestNumber("cat", "dog", "hippopotamus")); // false
-console.log(getLowestNumber(1, "otter", 30)); // false
-console.log(getLowestNumber(-53, 72, 7)); // -53
+// console.log(getLowestNumber(1, 15, 30)); // 1
+// console.log(getLowestNumber(true, false, true)); // false
+// console.log(getLowestNumber("1", "15", "30")); // 1
+// console.log(getLowestNumber("cat", "dog", "hippopotamus")); // false
+// console.log(getLowestNumber(1, "otter", 30)); // false
+// console.log(getLowestNumber(-53, 72, 7)); // -53
 
 
 
