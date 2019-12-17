@@ -74,16 +74,18 @@ function switcher(x){
 }*/
 
 // TODO Answer 5
+//objects: width, height, length; console.log key value pairs to show if function works
 
 /*function volumeOfBox(sizes) {
     return sizes.width * sizes.height * sizes.length;
+    // return sizes["width"] * sizes["height"] * sizes{"length"];
 }*/
 
 // TODO Answer 6
-
+// REMEMBER THAT OBJECTS HAVE METHODS TOO
 /*function keysAndValues(obj) {
-    let keys = Object.keys(obj);
-    let values = Object.values(obj);
+    var keys = Object.keys(obj);
+    var values = Object.values(obj);
 
     return [keys, values];
 }*/
@@ -91,14 +93,14 @@ function switcher(x){
 // TODO Answer 7
 
 /*let oldest = function(people) {
-    let oldestAge = 0;
-    let oldestAgeName = "";
-    let nameArray = Object.keys(people);
-    let ageArray = Object.values(people);
+    var oldestAge = 0;
+    var oldestAgeName = "";
+    var nameArray = Object.keys(people);
+    var ageArray = Object.values(people);
 
-    for (let i = 0; i < ageArray.length; i++) {
+    for (var i = 0; i < ageArray.length; i++) {
         if (ageArray[i] > oldestAge) {
-            oldestAge = ageArray[i];
+            oldestAge = ageArray[i]; //storing current oldest age in variable
             oldestAgeName = nameArray[i];
         }
     }
