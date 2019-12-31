@@ -964,8 +964,43 @@
 // assert(sumAll([0, 5, 6]), 11, "Exercise 60");
 // addToDone("Exercise 60 is correct.")
 
+// //  Exercise 61
+// //  Write a function definition named mean that takes in sequence of numbers and returns the average value
+//
+// function mean(input) {
+//     var sum = input.reduce(function(a, b){
+//         return a + b;
+//     }, 0);
+//     return sum / input.length
+// }
+//
+// assert(mean([1, 2, 3, 4]), 2.5, "Exercise 61");
+// assert(mean([3, 3, 3]), 3, "Exercise 61");
+// assert(mean([1, 5, 6]), 4, "Exercise 61");
+// addToDone("Exercise 61 is correct.")
 
+// function median(input) {
+//     var median = 0, inputLength = input.length;
+//     input.sort();
+//
+//     if (
+//         inputLength % 2 === 0 // is even
+//     ) {
+//         // average of two middle numbers
+//         median = (input[inputLength / 2 - 1] + input[inputLength / 2]) / 2;
+//     } else { // is odd
+//         // middle number only
+//         median = input[(inputLength - 1) / 2];
+//     }
+//
+//     return median;
+// }
 
+// assert(median([1, 2, 3, 4, 5]), 3.0, "Exercise 62");
+// assert(median([1, 2, 3]), 2.0, "Exercise 62");
+// assert(median([1, 5, 6]), 5.0, "Exercise 62");
+// assert(median([1, 2, 5, 6]), 3.5, "Exercise 62");
+// addToDone("Exercise 62 is correct.")
 
 </script>
 </body>
