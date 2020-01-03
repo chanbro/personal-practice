@@ -6,6 +6,7 @@
 
 body {
     font-family: sans-serif;
+    background-color: black;
 }
 
 .intro {
@@ -36,4 +37,18 @@ section h1 {
     padding-top: 300px;
     text-align: center;
     font-size: 80px;
+    color: white;
+}
+
+h3 {
+    padding-top: 30px;
+    text-align: center;
+    color: white;
+}
+
+.audio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
 }
