@@ -65,27 +65,14 @@ function selectOption(option) {
     showTextNode(nextTextNodeId);
 }
 
-//Calls function that makes img move on new page load
-// "img/john-move-neutral.gif" id: event-image
 
-var left = 0;
-
-var moveImg = function(){
-   left = left + 20;
-
-   document.getElementById('event-img').style.left = left + 'px';
-};
-
-//random number generator
+//random number generator for chance encounter
 var randomNumber = Math.floor(Math.random() * 10) + 1;
-
 function rollResult() {
-    var randomNumber = Math.floor(Math.random() * 10) + 1;
-
     if (randomNumber <= 5) {
-
+        return 26
     } else {
-        
+        return 27
     }
 }
 
@@ -359,9 +346,6 @@ const textNodes = [
             },
         ]
     },
-
-// COMMENTED OUT 23-25 CHANCE ENCOUNTER UNTIL RANDOM ROLL FUNCTION IS MADE
-
     {
         id: 23,
         text: 'The worker\'s face twists in confusion. “I\'m working in the airport at Christmas, man. I\'m already screwed. Keep it moving.”',
@@ -388,11 +372,11 @@ const textNodes = [
     },
     {
         id: 25,
-        text: 'YOU ROLLED: ' + rollResult, // need to make function for random roll 1-10; if 1-5 GAME OVER id: 26, else proceed to id: 27. For now will code as if 6-10 was rolled.
+        text: 'YOU ROLLED: ' + randomNumber, // need to make function for random roll 1-10; if 1-5 GAME OVER nextText: 26, else nextText: 27. For now will code as if 6-10 was rolled.
         options: [
             {
                 text: "Next", //go to CHANCE encounter, need to create function for random roll
-                nextText: 27
+                nextText: rollResult()
             },
         ]
     },

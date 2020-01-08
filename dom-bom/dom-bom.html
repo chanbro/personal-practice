@@ -11,18 +11,49 @@
     <meta charset="utf-8">
     <title>Defuse the BOM</title>
     <link rel="stylesheet" href="css/dom-bom.css">
-    <script src="js/dom-bom.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+
 </head>
 <body>
-<div class="container">
-    <h1 class="instructions">Try and stop me!</h1>
+
+<div class="box">
+
+    <div class="screen" id="message-screen ">
+        <h1 class="message">YOU'LL NEVER STOP ME!</h1>
+    </div>
+
+    <div class="screen" id="instructions-screen">
+        <h2 id="instructions">Press the sequence before the timer runs out</h2>
+    </div>
+    <button class="start">START</button>
+
+    <div class="screen" id="timer-screen">
+        <h2 id="countdown">5</h2>
+    </div>
+
+    <div class="sequence-screen">
+        <img src="#" alt="Sequence to diffuse bomb" id="sequence">
+    </div>
 
 </div>
 
+<script
+        src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+        crossorigin="anonymous"></script>
+<script>
 
+    "use strict";
 
-<h2 id="message">This BOM will self destruct in <span id="timer">5</span> seconds...</h2>
-<button id="defuser">Defuse the BOM</button>
+    $(function () {
 
+        $('h1').hide();
+        setInterval(function () {
+            $('h1').show()
+        }, 1000)
+
+    });
+
+</script>
 </body>
 </html>
