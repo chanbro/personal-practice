@@ -76,6 +76,19 @@ var moveImg = function(){
    document.getElementById('event-img').style.left = left + 'px';
 };
 
+//random number generator
+var randomNumber = Math.floor(Math.random() * 10) + 1;
+
+function rollResult() {
+    var randomNumber = Math.floor(Math.random() * 10) + 1;
+
+    if (randomNumber <= 5) {
+
+    } else {
+        
+    }
+}
+
 //Events stored as objects
 const textNodes = [
     {
@@ -375,7 +388,7 @@ const textNodes = [
     },
     {
         id: 25,
-        text: 'YOU ROLLED: ' + " (make function for rollResult)", // need to make function for random roll 1-10; if 1-5 GAME OVER id: 26, else proceed to id: 27. For now will code as if 6-10 was rolled.
+        text: 'YOU ROLLED: ' + rollResult, // need to make function for random roll 1-10; if 1-5 GAME OVER id: 26, else proceed to id: 27. For now will code as if 6-10 was rolled.
         options: [
             {
                 text: "Next", //go to CHANCE encounter, need to create function for random roll

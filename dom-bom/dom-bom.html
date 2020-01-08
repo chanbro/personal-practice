@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Defuse the BOM</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Defuse the BOM</title>
+    <link rel="stylesheet" href="css/dom-bom.css">
+    <script src="js/dom-bom.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1 class="instructions">Try and stop me!</h1>
+
+</div>
+
+
+
+<h2 id="message">This BOM will self destruct in <span id="timer">5</span> seconds...</h2>
+<button id="defuser">Defuse the BOM</button>
+
+</body>
+</html>
