@@ -1,9 +1,19 @@
 /*Start CSS Grid Generator */
+
+body {
+    background-image: url("../img/background.jpg");
+    color: white;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "navigation-container navigation-container navigation-container navigation-container navigation-container navigation-container navigation-container navigation-container navigation-container navigation-container" ". . featured-container featured-container featured-container banner-container banner-container banner-container . ." ". . featured-container featured-container featured-container banner-container banner-container banner-container . ." ". . featured-container featured-container featured-container banner-container banner-container banner-container . ." ". . featured-container featured-container featured-container music-container music-container music-container . ." ". . contact-container contact-container contact-container music-container music-container music-container . ." ". . contact-container contact-container contact-container projects-container projects-container projects-container . ." ". . about-container about-container about-container projects-container projects-container projects-container . ." ". . about-container about-container about-container friends-container friends-container friends-container . ." ". . about-container about-container about-container friends-container friends-container friends-container . ." ". . about-container about-container about-container friends-container friends-container friends-container . .";
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    /*background-color: red;*/
+    height: 100vh;
 }
 
 .navigation-container {
@@ -12,23 +22,49 @@
     grid-template-rows: 1fr 1fr;
     grid-template-areas: ". . ." ". . .";
     grid-area: navigation-container;
+    background-color: white;
 }
 
 .featured-container {
     grid-area: featured-container;
+    background-color: black;
+    border: 2px dotted white;
 }
 
 .contact-container {
     grid-area: contact-container;
+    background-color: black;
+    border: 2px dotted white;
 }
 
-.banner-container { grid-area: banner-container; }
+.banner-container {
+    grid-area: banner-container;
+    background-color: black;
+    border: 2px dotted white;
+}
 
-.music-container { grid-area: music-container; }
+.music-container {
+    grid-area: music-container;
+    background-color: black;
+    border: 2px dotted white;
+}
 
-.friends-container { grid-area: friends-container; }
+.friends-container {
+    grid-area: friends-container;
+    background-color: black;
+    border: 2px dotted white;
+}
 
-.about-container { grid-area: about-container; }
+.about-container {
+    grid-area: about-container;
+    background-color: black;
+    border: 2px dotted white;
+}
 
-.projects-container { grid-area: projects-container; }
+.projects-container {
+    grid-area: projects-container;
+    background-color: black;
+    border: 2px dotted white;
+}
+
 /*End CSS Grid Generator */
