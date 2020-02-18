@@ -1,8 +1,10 @@
 /*Start CSS Grid Generator */
 
 body {
-    background-image: url("../img/background.jpg");
+    /*background-image: url("../img/background.jpg");*/
     color: white;
+    background-color: black;
+    font-family: 'Teko', sans-serif;
 }
 
 .grid-container {
@@ -29,6 +31,24 @@ body {
     grid-area: featured-container;
     background-color: black;
     border: 2px dotted white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.right, .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.right {
+    margin-left: 1em;
+}
+
+#online-now {
+    width: 50%;
+    height: 10%;
 }
 
 .contact-container {
@@ -47,6 +67,11 @@ body {
     grid-area: music-container;
     background-color: black;
     border: 2px dotted white;
+}
+
+#playlist{
+    width: 100%;
+    height: 380px;
 }
 
 .friends-container {
