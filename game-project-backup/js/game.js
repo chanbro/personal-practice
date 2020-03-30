@@ -11,15 +11,16 @@ let state = {
 
 //Starts game, sets default state, and immediately picks textNodes object with ID of 1
 function startGame() {
-    state = { medPack: false,
-              badge: false,
-              politeCop: false,
-              rudeCop: false,
-              ski : false,
-              hairspray: false,
-              lighter: false,
-              nailFile : false,
-            };
+    state = {
+        medPack: false,
+        badge: false,
+        politeCop: false,
+        rudeCop: false,
+        ski: false,
+        hairspray: false,
+        lighter: false,
+        nailFile: false,
+    };
     showTextNode(1);
 }
 
@@ -35,13 +36,13 @@ function showTextNode(textNodeIndex) {
     imgElement.src = textNode.image;
 
     //Gets rid of old buttons from previous event
-    while(optionButtonsElement.firstChild) {
+    while (optionButtonsElement.firstChild) {
         optionButtonsElement.removeChild(optionButtonsElement.firstChild);
     }
 
     //Creates a new button for each option available in that event
     textNode.options.forEach(option => {
-        if(showOption(option)) {
+        if (showOption(option)) {
             const button = document.createElement('button');
             button.innerText = option.text;
             button.classList.add('btn');
@@ -68,6 +69,7 @@ function selectOption(option) {
 
 //random number generator for chance encounter
 var randomNumber = Math.floor(Math.random() * 10) + 1;
+
 function rollResult() {
     if (randomNumber <= 5) {
         return 26
@@ -85,7 +87,7 @@ const textNodes = [
         options: [
             {
                 text: "Grab the [Med Pack]",
-                setState: { medPack: true },
+                setState: {medPack: true},
                 nextText: 2
             },
             {
@@ -182,7 +184,7 @@ const textNodes = [
         options: [
             {
                 text: "Pull out your [BADGE] to show to the officer", //only one choice for tutorial purposes
-                setState: { badge: true },
+                setState: {badge: true},
                 nextText: 9
             },
         ]
@@ -485,7 +487,7 @@ const textNodes = [
             // },
             {
                 text: "Grab an item off the conveyor belt to use as a weapon",
-                setState: { ski : true},
+                setState: {ski: true},
                 nextText: 35
             },
         ]
@@ -510,7 +512,7 @@ const textNodes = [
             // },
             {
                 text: "Distract him with something from the suitcase",
-                setState: { hairspray : true},
+                setState: {hairspray: true},
                 nextText: 37
             },
         ]
@@ -585,12 +587,12 @@ const textNodes = [
         options: [
             {
                 text: "Jump off the belt and grab onto the ledge",
-                setState: { lighter: true },
+                setState: {lighter: true},
                 nextText: 43
             },
             {
                 text: "Jump down into a pile of luggage below",
-                setState: { nailFile: true },
+                setState: {nailFile: true},
                 nextText: 43
             },
         ]

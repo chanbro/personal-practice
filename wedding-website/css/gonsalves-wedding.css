@@ -46,7 +46,7 @@ body, html {
     margin-bottom: 0;
 }
 
-.lead{
+.lead {
     font-family: 'Josefin Slab', serif;
     font-size: 30px;
     text-align: center;
@@ -110,9 +110,11 @@ body {
 * {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
 }
+
 nav {
     background: var(--bar-color);
     z-index: 100;
@@ -122,6 +124,7 @@ nav {
     position: sticky;
     top: 0;
 }
+
 ul {
     list-style: none;
     padding: 0;
@@ -130,6 +133,7 @@ ul {
     justify-content: space-around;
 
 }
+
 nav a {
     text-decoration: none;
     font-family: 'Josefin Slab', serif, bold;
@@ -138,6 +142,7 @@ nav a {
     display: inline-block; /* inline-block to increase clickable area beyond the text */
     padding: 1em; /* increases clickable area of anchor tags on all sides by 1em */
 }
+
 nav a:hover {
     color: var(--bar-text-hover);
 }

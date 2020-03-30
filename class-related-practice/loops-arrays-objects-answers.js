@@ -45,7 +45,7 @@
 
 // TODO Answer 3
 
-function switcher(x){
+function switcher(x) {
     var alphabet = " ?!abcdefghijklmnopqrstuvwxyz ";
     var reverseAlphabetArray = alphabet.split("").reverse();
     var returnString = "";
@@ -57,7 +57,7 @@ function switcher(x){
     // });
 
     //for loop
-    for (var i = 1; i < x.length; i++){
+    for (var i = 1; i < x.length; i++) {
         console.log("position is currently: " + x[i]);
         returnString += reverseAlphabetArray[x[i]];
     }

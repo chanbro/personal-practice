@@ -1733,7 +1733,7 @@ function mostSpentOnItem(shoppingCart) {
     var item = {}
     var totalItemPrice = 0
     var totalUnitPrice = 0
-    for (var i=0;i<shoppingCart.items.length;i++) {
+    for (var i = 0; i < shoppingCart.items.length; i++) {
         totalUnitPrice = shoppingCart.items[i].price * shoppingCart.items[i].quantity
         if (totalUnitPrice > totalItemPrice)
             item = shoppingCart.items[i]

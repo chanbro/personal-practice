@@ -107,6 +107,7 @@ function isTen(x) {
 function isMoreThanTen(x) {
     return x > 10
 }
+
 // console.log(isMoreThanTen(2)); //false
 // console.log(isMoreThanTen(12)); //true
 // console.log(isMoreThanTen("yes")); //false
@@ -121,13 +122,13 @@ function isPositive(x) {
     var x = parseFloat(x);
     return ((x > 0)) && (typeof x == "number")
 }
+
 // console.log(isNegative(-2)); //true
 // console.log(isNegative(12)); //false
 // console.log(isNegative("yes")); //false
 // console.log(isNegative(false)); //false
 // console.log(isNegative(true)); //false
 // console.log(isNegative("5")); //false
-
 
 
 // PART 2
@@ -247,6 +248,7 @@ function reverseUpperCaseString(x) {
         return x;
     }
 }
+
 //split string at every character (turn all characters into array), reverse the order in which chacracters appear, rejoin characters as a string, turn all string characters to Uppercase
 //error at line 246
 
@@ -256,7 +258,6 @@ console.log(reverseUpperCaseString("15")); // false
 console.log(reverseUpperCaseString("cat")); // TAC
 console.log(reverseUpperCaseString("RaCeCaR")); // RACECAR
 console.log(reverseUpperCaseString("yRaNoiTCId")); // DICTIONARY
-
 
 
 // Write a function named getLowestNumber that takes in 3 arguments. If all 3 inputs are numbers or numeric strings, then return the highest number. If any of the 3 inputs is missing or non-numeric, then return false.

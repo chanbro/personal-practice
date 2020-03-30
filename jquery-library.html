@@ -30,58 +30,56 @@
         integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
         crossorigin="anonymous"></script>
 <script>
-    (function($) {
+    (function ($) {
 
-        $(document).ready(function()
-        {
-            $('#click').click(function(e)
-            {
+        $(document).ready(function () {
+            $('#click').click(function (e) {
                 $(this).toggleClass('highlight')
             });
 
-            $("#dblclick").dblclick(function(){
+            $("#dblclick").dblclick(function () {
                 $(this).toggleClass('highlight');
             });
 
-            $("#mouseenter").mouseenter(function(){
+            $("#mouseenter").mouseenter(function () {
                 $(this).toggleClass('highlight');
             });
 
-            $("#mouseleave").mouseleave(function(){
+            $("#mouseleave").mouseleave(function () {
                 $(this).toggleClass('highlight');
             });
 
-            $("#mousedown").mousedown(function(){
+            $("#mousedown").mousedown(function () {
                 $(this).toggleClass('highlight');
             });
 
-            $("#mouseup").mouseup(function(){
+            $("#mouseup").mouseup(function () {
                 $(this).toggleClass('highlight');
             });
 
-            $("#hover").hover(function(){
+            $("#hover").hover(function () {
                     $(this).toggleClass('highlight');
                 },
-                function(){
+                function () {
                     $(this).toggleClass('highlight');
                 });
 
-            $("#focus").focus(function(){
+            $("#focus").focus(function () {
                 $(this).toggleClass('highlight');
             });
 
-            $("#blur").blur(function(){
+            $("#blur").blur(function () {
                 $(this).css("background-color", "#ffffff");
             });
 
             $("#on").on({
-                mouseenter: function(){
+                mouseenter: function () {
                     $(this).css("background-color", "lightgray");
                 },
-                mouseleave: function(){
+                mouseleave: function () {
                     $(this).css("background-color", "lightblue");
                 },
-                click: function(){
+                click: function () {
                     $(this).css("background-color", "yellow");
                 }
             });

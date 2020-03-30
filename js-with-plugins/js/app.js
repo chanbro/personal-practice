@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
     document.getElementById("rain").play();
 };
 
@@ -21,22 +21,22 @@ let scene = new ScrollMagic.Scene({
     //
     triggerHook: 0,
 })
-//see scrolling markers
-.addIndicators()
-//prevent img from scrolling until trigger meets end
-.setPin(intro)
-.addTo(controller);
+    //see scrolling markers
+    .addIndicators()
+    //prevent img from scrolling until trigger meets end
+    .setPin(intro)
+    .addTo(controller);
 
 //Text Animation
-const textAnim= TweenMax.fromTo(text, 12, {opacity: 1}, {opacity: 0});
+const textAnim = TweenMax.fromTo(text, 12, {opacity: 1}, {opacity: 0});
 
 let scene2 = new ScrollMagic.Scene({
     duration: 12000,
     triggerElement: intro,
     triggerHook: 0
 })
-.setTween(textAnim)
-.addTo(controller);
+    .setTween(textAnim)
+    .addTo(controller);
 
 //Video Animation
 //frame rate of video upon scroll stop ("easing", allowing frame rate to catch up)

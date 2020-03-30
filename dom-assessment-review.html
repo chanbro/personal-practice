@@ -22,17 +22,17 @@
     "use strict";
 
     function doSomething() {
-            let one = document.getElementById('one');
-            console.log(one.innerHTML);
+        let one = document.getElementById('one');
+        console.log(one.innerHTML);
 
-            //delay page load; change heading
+        //delay page load; change heading
 
         document.getElementById('page').setAttribute('style', 'visibility: hidden');
 
         setTimeout(function () {
-                document.getElementById('page').setAttribute('style', 'visibility: visible');
-                console.log('ready')
-            }, 5000);
+            document.getElementById('page').setAttribute('style', 'visibility: visible');
+            console.log('ready')
+        }, 5000);
     }
 
     doSomething()

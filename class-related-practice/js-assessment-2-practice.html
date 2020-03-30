@@ -41,22 +41,19 @@
     //create if condition argues change versus amount due
     //create else if argument that states false if you don't have enough change
     function changeEnough(change, amountDue) {
-        var quart = change[0]*0.25;
-        var dimes = change[1]*0.10;
-        var nickel = change[2]*0.05;
-        var pennies = change[3]*0.01;
-        var result = quart+dimes+nickel+pennies;
-        if(result >= amountDue){
+        var quart = change[0] * 0.25;
+        var dimes = change[1] * 0.10;
+        var nickel = change[2] * 0.05;
+        var pennies = change[3] * 0.01;
+        var result = quart + dimes + nickel + pennies;
+        if (result >= amountDue) {
             return true;
-        }
-        else if(result < amountDue){
+        } else if (result < amountDue) {
             return false;
         }
     }
+
     console.log(changeEnough([2, 100, 0, 0], 14.11));
-
-
-
 
 
 </script>
