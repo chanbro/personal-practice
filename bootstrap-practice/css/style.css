@@ -14,17 +14,29 @@
     color: white;
 }
 
+.content-container{
+    width: 100%
+}
+
 .landing-container{
+    /*width: 100%;*/
     height: 100vh;
     background-color: pink;
 }
 
 .projects-container {
+    /*width: 100%;*/
     height: 100vh;
     background-color: greenyellow;
 }
 
 .about-container {
+    /*width: 100%;*/
     height: 100vh;
     background-color: deepskyblue;
+}
+
+.card {
+    width: 25vw;
+    height: 25vh;
 }
