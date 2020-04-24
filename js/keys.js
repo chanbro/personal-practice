@@ -1,1 +1,1 @@
-googleCustomSearch = "AIzaSyCTOLEcfhJ3bi5ZIqAE7kiXpMB9XMZ_3d8";
+googleAPIs = "AIzaSyDsyTzNPf6L8fNkZAmhb5e--Qrl_oAfwaE";

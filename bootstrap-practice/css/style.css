@@ -1,0 +1,10 @@
+.nav-container {
+    position: fixed;
+    background-color: #00aba9;
+    color: white;
+    height: 100vh;
+}
+
+.desktop-nav, a{
+    color: white;
+}
