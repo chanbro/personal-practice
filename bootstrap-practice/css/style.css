@@ -41,3 +41,7 @@ html, body {
     height: 25vh;
 }
 
+.carousel {
+    width: 100vw;
+    height: 100vh;
+}
