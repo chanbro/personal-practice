@@ -48,3 +48,8 @@ html, body {
     width: 25vw;
     height: 25vh;
 }
+
+.carousel {
+    width: 100vw;
+    height: 100vh;
+}
