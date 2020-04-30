@@ -2,7 +2,10 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    overflow-y: auto
+}
+
+.container {
+    width: 100vw;
 }
 
 .nav-container {
@@ -49,3 +52,11 @@ html, body {
     height: 25vh;
 }
 
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.scroll {
+    scroll-snap-align: start;
+}
