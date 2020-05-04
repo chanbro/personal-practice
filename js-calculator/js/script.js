@@ -7,7 +7,7 @@ class Calculator {
 
     clear() {
         this.currentOperand = ''
-        this.previousOperard = ''
+        this.previousOperand = ''
         this.operation = undefined
     }
 
@@ -20,7 +20,7 @@ class Calculator {
     }
 
     chooseOperation(operation) {
-        
+
     }
 
     compute() {
