@@ -26,7 +26,7 @@ html, body {
 .landing-container{
     /*width: 100%;*/
     height: 100vh;
-    background-color: pink;
+background-image: url("../img/fish.jpg");
 }
 
 .projects-container {
