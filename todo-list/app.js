@@ -14,3 +14,14 @@ const options = {weekday: "long", month: "short", day: "numeric"}
 const today = new Date()
 
 dateElement.innerHTML = today.toLocaleDateString("en-US", options)
+
+// Add to-do function
+function addToDo(toDo) {
+    const item = `<li class="item">
+                <i class="far fa-circle complete" job="complete" id="0"></i>
+                <p class="text">${toDo}</p>
+                <i class="far fa-trash-alt" job="delete" id="0"></i>
+            </li>`
+    const position = "beforeend"
+    list.insertAdjacentHTML(position, item)
+}
