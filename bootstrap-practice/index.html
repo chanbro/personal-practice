@@ -123,7 +123,7 @@
                 <h1>Section Title</h1>
                 <h3>Section Subcontent</h3>
             </header>
-            <div class="contact-form mx-auto row">
+            <div class="contact-form m-auto row">
                 <form class="needs-validation" novalidate>
                     <div class="form-row">
                         <div class="col-md-4 mb-3">
@@ -143,16 +143,11 @@
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
-                            <label for="validationCustomUsername">Username</label>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
-                                </div>
-                                <input type="text" class="form-control" id="validationCustomUsername"
-                                       placeholder="Username" aria-describedby="inputGroupPrepend" required>
-                                <div class="invalid-feedback">
-                                    Please choose a username.
-                                </div>
+                            <label for="exampleFormControlInput1">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                   placeholder="name@example.com" required>
+                            <div class="invalid-feedback">
+                                Please enter an email address.
                             </div>
                         </div>
                     </div>
@@ -193,11 +188,11 @@
                     </div>
                     <button class="btn btn-primary" type="submit">Submit form</button>
                 </form>
-
-                <ul>
-                    <li>Contact Info</li>
-                    <li>Contact Info</li>
-                    <li>Contact Info</li>
+                <ul class="d-flex justify-content-around flex-column ml-5">
+                    <li>LinkedIn</li>
+                    <li>Github</li>
+                    <li>Twitter</li>
+                    <li>Alumni Portal</li>
                 </ul>
             </div>
         </section>

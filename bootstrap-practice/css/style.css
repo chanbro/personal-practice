@@ -60,3 +60,11 @@ background-image: url("../img/fish.jpg");
 .scroll {
     scroll-snap-align: start;
 }
+
+ul {
+    list-style: none;
+}
+
+.contact-links {
+    background-color: white;
+}
