@@ -15,4 +15,9 @@
             }, false);
         });
     }, false);
+
+    $('body').scrollspy({
+        target: '#sidenav',
+        offset: 40
+    });
 })();

@@ -27,30 +27,29 @@
 <body>
 <div class="row">
     <!--Desktop Side Navbar-->
-    <div class="d-none d-lg-block col-lg-1">
-        <div class="nav-container d-flex row col-1 my-auto d-flex justify-content-center">
-            <ul class="nav flex-column align-self-center desktop-nav">
-                <li class="nav-item mb-4">
-                    <a class="nav-link" href="#landing" aria-label="Home navigation" data-toggle="tooltip"
-                       data-placement="right" title="Home"><i class="fas fa-home"></i></a>
-                </li>
-                <li class="nav-item mb-4">
-                    <a class="nav-link" href="#projects" aria-label="Projects navigation" data-toggle="tooltip"
-                       data-placement="right" title="Projects"><i class="fas fa-code"></i></a>
-                </li>
-                <li class="nav-item mb-3">
-                    <a class="nav-link" href="#skills" aria-label="Skills navigation" data-toggle="tooltip"
-                       data-placement="right" title="Skills"><i class="fas fa-star"></i></a>
-                </li>
-                <li class="nav-item mb-4">
-                    <a class="nav-link" href="#contact" aria-label="Contact navigation" data-toggle="tooltip"
-                       data-placement="right" title="Contact"><i class="fas fa-address-card"></i></a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <nav class="sidenav nav-container d-flex row col-1 my-auto d-flex justify-content-center">
+        <ul class="nav flex-column align-self-center desktop-nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+            <li class="nav-item mb-4">
+                <a class="nav-link active" href="#landing" aria-label="Home navigation"
+                   data-placement="right" title="Home"><i class="fas fa-home"></i></a>
+            </li>
+            <li class="nav-item mb-4">
+                <a class="nav-link" href="#projects" aria-label="Projects navigation"
+                   data-placement="right" title="Projects"><i class="fas fa-code"></i></a>
+            </li>
+            <li class="nav-item mb-3">
+                <a class="nav-link" href="#skills" aria-label="Skills navigation"
+                   data-placement="right" title="Skills"><i class="fas fa-star"></i></a>
+            </li>
+            <li class="nav-item mb-4">
+                <a class="nav-link" href="#contact" aria-label="Contact navigation"
+                   data-placement="right" title="Contact"><i class="fas fa-address-card"></i></a>
+            </li>
+        </ul>
+    </nav>
     <!--        Main Page Content-->
-    <main class="col-xs-12 col-lg-11 container flex-column">
+    <main class="scrollspy z-depth-1 col-xs-12 col-lg-11 container flex-column" data-spy="scroll" data-target="#navbar-example3"
+          data-offset="0">
         <!--    Landing-->
         <section class="landing-container scroll row" id="landing">
             <header class="flex-column m-auto d-flex align-items-center justify-content-center">
@@ -129,14 +128,16 @@
                     <div class="form-row">
                         <div class="col-md-6 mb-3">
                             <label for="validationCustom01">First name</label>
-                            <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="First name"
+                                   required>
                             <div class="valid-feedback">
                                 Looks good!
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="validationCustom02">Last name</label>
-                            <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" required>
+                            <input type="text" class="form-control" id="validationCustom02" placeholder="Last name"
+                                   required>
                             <div class="valid-feedback">
                                 Looks good!
                             </div>
@@ -163,26 +164,28 @@
                     </div>
                     <button class="btn btn-yellow btn-rounded" type="submit">Submit form</button>
                 </form>
-                <ul class="d-flex justify-content-around flex-column ml-5">
+                <div class="flex-column col-md-5 ml-5">
                     <h1>SOCIAL MEDIA</h1>
 
-                </ul>
+                </div>
             </div>
         </section>
     </main>
-    <!--Bootstrap Scripts-->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
             crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
             integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
             crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
             crossorigin="anonymous"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript"
             src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"></script>
+    <!--    Custom JS-->
+    <script src="js/app.js"></script>
 
 </body>
 </html>
