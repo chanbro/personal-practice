@@ -1,0 +1,10 @@
+.head {
+    position: fixed;
+    z-index: 100;
+    background-color:white;
+}
+
+.projects {
+    transform: translateY(150px);
+    z-index: -1;
+}
