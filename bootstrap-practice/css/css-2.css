@@ -6,11 +6,16 @@ body {
   font-family: "Balsamiq Sans", cursive;
 }
 
+.about {
+    position: fixed;
+    
+}
+
 h1 {
   font-family: "Londrina Outline", cursive;
   font-size: 80px;
   text-align: center;
-  color: #fff;
+  color: #f2a1c8;
   animation: glow 1s ease-in-out infinite alternate;
 }
 
