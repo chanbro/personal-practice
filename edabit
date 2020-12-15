@@ -1,0 +1,156 @@
+//Create a function that takes two arguments: the original price and the discount percentage as integers and returns the final price after the discount.
+public class Sales {
+	public static double discount(int price, int percentage) {
+		double sub = price * percentage * .01;
+		double discount = price - sub;
+			return discount;
+	}
+} 
+
+//Create a function that takes two integers and checks if they are equal.
+public class Challenge {
+	public static boolean isEqual(int num1, int num2) {
+		return num1 == num2
+  }
+}
+
+//There is a single operator in Java, capable of providing the remainder of a division operation. Two numbers are passed as parameters. The first parameter divided by the second parameter will have a remainder, possibly zero. Return that value.
+public class Challenge {
+  public static int remainder(int a, int b) {
+		return a % b;
+  }
+}
+
+//Write a function that returns the string "something" joined with a space " " and the given argument a.
+public class Program {
+	public static String giveMeSomething(String a) {
+		return "something " + a;
+	}
+}
+
+//Create a function that takes a number as an argument, increments the number by +1 and returns the result.
+public class Challenge {
+	public static int addition(int num) {
+		return num+1;
+	}
+}
+
+//Create a function that takes length and width and finds the perimeter of a rectangle.
+public class Challenge {
+	public static int findPerimeter(int length, int width) {
+		int perimeter = 2 * length + 2 * width;
+		return perimeter;
+  }
+}
+
+//Create a function that takes the age and return the age in days.
+public class Age {
+	public static int calcAge(int age) {
+		int days = age * 365;
+			return days;
+	}
+}
+
+//Java has a logical operator &&. The && operator takes two boolean values, and returns true if both values are true.
+
+//Consider a && b:
+
+//a is checked if it is true or false.
+//If a is false, false is returned.
+//b is checked if it is true or false.
+//If b is false, false is returned.
+//Otherwise, true is returned (as both a and b are therefore true ).
+//The && operator will only return true for true && true.
+
+//Make a function using the && operator.
+public class Program {
+  public static boolean and(boolean a, boolean b) {
+		return a && b;
+  }
+}
+
+//Create a function that takes the number of wins, draws and losses and calculates the number of points a football team has obtained so far.
+
+//wins get 3 points
+//draws get 1 point
+//losses get 0 points
+public class Program {
+  public static int footballPoints(int wins, int draws, int loses) {
+		int win = wins * 3;
+		return win + draws;
+  }
+}
+
+//Write a function that takes the base and height of a triangle and return its area.
+public class Challenge {
+	public static int triArea(int base, int height) {
+		return  base * height / 2;
+	}
+}
+
+//Write a function that stutters a word as if someone is struggling to read it. The first two letters are repeated twice with an ellipsis ... and space after each, and then the word is pronounced with a question mark ?.
+public class Stuttering {
+	public static String stutter(String word) {
+		String st = word.substring(0, 2) + "... ";
+			return st + st + word + "?";
+	}
+}
+
+//Write a function that returns true if there exists at least one number that is larger than or equal to n.
+public class ExistsANumberHigher {
+	public static boolean existsHigher(int[] arr, int n) {
+		boolean result = false;
+		for (int i=0; i<arr.length; i++){
+			if (arr[i] >= n){
+				result = true;
+				break;
+			}
+		}
+		return result;
+	}
+}
+
+//Create a function that takes an array and returns the difference between the biggest and smallest numbers.
+public class Challenge {
+	public static int differenceMaxMin(int[] arr) {
+		Arrays.sort(arr);
+		return arr[arr.length-1] - arr[0];
+	}
+}
+
+// Given a total due and an array representing the amount of change in your pocket, determine whether or not you are able to pay for the item. Change will always be represented in the following order: quarters, dimes, nickels, pennies.
+
+//To illustrate: changeEnough([25, 20, 5, 0], 4.25) should yield true, since having 25 quarters, 20 dimes, 5 nickels and 0 pennies gives you 6.25 + 2 + .25 + 0 = 8.50.
+public class Program {		
+	public static boolean changeEnough(int[] change, double amountDue) {
+		double total = change[0]*.25 + change[1]*.1 + change[2]*.05 + change[3]*.01;
+		return total >= amountDue;	
+	}	
+}
+
+//Create a function which returns the number of true values there are in an array.
+public class Challenge {
+	public static int countTrue(boolean[] arr) {
+		int count = 0;
+		for (boolean i : arr){
+			if (i == true)
+				count++;
+		}
+		return count;
+	}
+}
+
+//Write a function that returns true if two rooks can attack each other, and false otherwise. 
+//canCapture(["A8", "E8"]) ➞ true
+public class Challenge {
+	public static boolean canCapture(String[] rooks) {
+		String space1 = rooks[0];
+		String space2 = rooks[1];
+			if (space1.charAt(0) == space2.charAt(0))
+				return true;
+			else if (space1.charAt(1) == space2.charAt(1))
+				return true;
+			else
+				return false;
+	}
+}
